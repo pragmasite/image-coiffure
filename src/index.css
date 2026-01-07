@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 340 25% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 25% 20%;
+
+    --primary: 340 60% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 95% 90%;
+    --secondary-foreground: 340 25% 20%;
+
+    --muted: 0 0% 92%;
+    --muted-foreground: 340 15% 45%;
+
+    --accent: 45 90% 55%;
+    --accent-foreground: 340 25% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 340 20% 88%;
+    --input: 340 20% 88%;
+    --ring: 340 60% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 340 25% 15%;
+    --foreground: 0 0% 98%;
+
+    --card: 340 25% 20%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 340 25% 20%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 45 90% 55%;
+    --primary-foreground: 340 25% 20%;
+
+    --secondary: 340 40% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 340 20% 30%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 25 95% 65%;
+    --accent-foreground: 340 25% 20%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 340 25% 25%;
+    --input: 340 25% 25%;
+    --ring: 45 90% 55%;
+    --sidebar-background: 340 25% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 45 90% 55%;
+    --sidebar-primary-foreground: 340 25% 20%;
+    --sidebar-accent: 340 25% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 340 25% 25%;
+    --sidebar-ring: 45 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
